@@ -21,7 +21,11 @@ public class SalaryEmployee : Employee //Esto sirve para heredar de otra clase o
 
     //Public Methods
     public override decimal GetValueToPay() => _salary;
-   
+    public override string ToString()
+    {
+        return $"{base.ToString()}\n\t" +
+               $"Salary..............: {GetValueToPay(),20:C2}";
+    }
 
     //Private Methods
 

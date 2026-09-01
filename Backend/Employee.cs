@@ -32,10 +32,10 @@ public abstract class Employee
 
     public override string ToString()
     {
-        return $"{Id}\t{FirstName} {LastName}\n\t" + 
-               $"Born date......: {BornDate,20}\n\t" +
-               $"Hire date......: {HireDate,20}\n\t" +
-               $"Salery.........: {GetValueToPay(),20:C2}";
+        return $"{Id}\t{FirstName} {LastName}\n\t" +
+               $"Born date...........: {BornDate,20}\n\t" +
+               $"Hire date...........: {HireDate,20}";
+               
     }
 
 }
