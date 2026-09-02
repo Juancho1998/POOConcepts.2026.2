@@ -1,6 +1,6 @@
 ﻿namespace Backend;
 
-public abstract class Employee
+public abstract class Employee : IPay
 {
 
     //Constructors

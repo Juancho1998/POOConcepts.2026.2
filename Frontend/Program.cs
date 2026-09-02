@@ -13,16 +13,18 @@ try
     var employee4 = new HourlyEmployee(4040, new Date(2020, 10, 04), new Date(2020, 10, 04), "Victor", "Maldonado", true, 25000, 113.5f);
     var employee5 = new HourlyEmployee(5050, new Date(2020, 10, 04), new Date(2020, 10, 04), "Dora", "Ruiz", true, 67000, 81f);
     var employee6 = new BaseCommissionEmployee(6060, new Date(2020, 10, 04), new Date(2020, 10, 04), "Lucia", "Hernandez", true, 0.0125f, 80000000, 600000);
+    var invoice1 = new Invoice(10001, "Computador portatil HP5200", 4800000, 5);
+    var invoice2 = new Invoice(10002, "Silla escritorio", 1230000, 8);
 
-    var employees = new List<Employee> { employee1, employee2, employee3, employee4, employee5, employee6 };
+    var expenses = new List<IPay> { employee1, employee2, employee3, employee4, employee5, employee6, invoice1, invoice2 };
     decimal total = 0;
 
 
-    foreach (var employee in employees)
+    foreach (var expense in expenses)
     {
         Console.WriteLine("--------------------------------------------------");
-        Console.WriteLine(employee);
-        total += employee.GetValueToPay();
+        Console.WriteLine(expense);
+        total += expense.GetValueToPay();
      
     }
     Console.WriteLine("==================================================");
