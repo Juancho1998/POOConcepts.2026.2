@@ -30,12 +30,9 @@ public abstract class Employee
 
     public abstract decimal GetValueToPay();
 
-    public override string ToString()
-    {
-        return $"{Id}\t{FirstName} {LastName}\n\t" +
+    public override string ToString() => $"{Id}\t{FirstName} {LastName}\n\t" +
                $"Born date...........: {BornDate,20}\n\t" +
                $"Hire date...........: {HireDate,20}";
                
-    }
 
 }

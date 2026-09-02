@@ -39,11 +39,8 @@ public class Date
     }
 
     //Public Methods
-    public override string ToString()
-    {
-        return $"{Year:D4}/{Month:D2}/{Day:D2}";
-    }
-
+    public override string ToString() => $"{Year:D4}/{Month:D2}/{Day:D2}";
+    
     //Private Methods
 
     private int ValidateYear(int year)

@@ -30,13 +30,10 @@ public class CommissionEmployee : Employee
     //Public Methods
     public override decimal GetValueToPay() => _sales * (decimal)_commissionPercentage;
 
-    public override string ToString()
-    {
-        return $"{base.ToString()}\n\t" +
+    public override string ToString() => $"{base.ToString()}\n\t" +
                $"Commission %........: {CommissionPercentage,20:P2}\n\t" +
                $"Sales...............: {Sales,20:C2}\n\t" +
                $"Salary..............: {GetValueToPay(),20:C2}";
-    }
 
     //Private Methods
     private float ValidateCommissionPercentage(float commissionPercentage)

@@ -33,18 +33,25 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Backend.HourlyEmployee">
-    <Position X="6.25" Y="4.5" Width="2.5" />
+    <Position X="6.5" Y="4.5" Width="2.5" />
     <InheritanceLine Type="Backend.Employee" ManuallyRouted="true">
       <Path>
         <Point X="5.25" Y="3.017" />
         <Point X="5.25" Y="3.931" />
-        <Point X="7.5" Y="3.931" />
-        <Point X="7.5" Y="4.5" />
+        <Point X="7.75" Y="3.931" />
+        <Point X="7.75" Y="4.5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAQAAAAEAAwAAAAAAAABAAAIAAAAAAAAAAE=</HashCode>
       <FileName>HourlyEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Backend.BaseCommissionEmployee">
+    <Position X="10.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
+      <FileName>BaseCommissionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
